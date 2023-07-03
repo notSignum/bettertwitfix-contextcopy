@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "BetterTwitFix Extension (Button)",
+  "description": "Add's a button to the top right of the screen to copy a better embedable link to the tweet you are viewing.",
+  "version": "1.0",
+  "permissions": ["scripting", "clipboardWrite", "activeTab"],
+  "homepage_url": "https://github.com/notSignum/bettertwitfix-extension",
+  "developer": {
+    "url": "https://twitter.com/notSignum"
+  },
+  "host_permissions": ["*://twitter.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}

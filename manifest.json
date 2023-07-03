@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Copy BetterFixTwit Link",
+  "description": "Add's a context menu item to copy a vxtwitter link for better embeds on discord",
+  "version": "1.2",
+  "permissions": ["contextMenus", "clipboardWrite", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "homepage_url": "https://github.com/notSignum/bettertwitfix-contextcopy",
+  "developer": {
+    "url": "https://github.com/notSignum"
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
